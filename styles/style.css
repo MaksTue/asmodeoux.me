@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+/*Container
+=================*/
+.container{
+    width: 100%;
+    max-width: 940px;
+    margin:  0 auto;
+}
+/*Header
+=================*/
+.header{
+    height: 110px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left 0;
+    z-index: 1000;
+}
+.header__inner{
+    padding: 26px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Nav
+=================*/
+.nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 595px;
+}
+.nav__link{
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+.nav__link:first-child{
+    margin-left: 0;
+    color: #00E0D0;
+}
+
+.nav__link:hover{
+    text-decoration: underline;
+}
+/*Intro
+=================*/
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 670px;
+    padding-top: 110px;
+    background: url("../images/intro-bg.jpg") center no-repeat / cover;  
+    background: #560056;
+}
+
+
+.intro__inner{
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+}
+
+.intro__title{
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: white;
+}
+
+.intro__line {
+    width: 50px;
+    border-color: #00e0ff;
+    height: 1px;
+    background-color: #10bad2;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.intro__text{
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 300;
+}
+/*Button
+=================*/
+.btn{
+    margin-top: 40px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    color: #00E0D0;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #00E0D0;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+/*Больше, чем 720px*/
+@media (min-width: 720px) {
+    .nav {
+    display: inline-flex;
+    justify-content: space-around;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 595px;
+}
+.gambButton {
+    display: none;
+}
+}
+
+/*Меньше, чем 720px*/
+@media (max-width: 720px) {
+        .nav {
+    display: none;
+    justify-content: space-around;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 595px;
+}
+.gambButton {
+    display: block;
+}
+}
+
+
